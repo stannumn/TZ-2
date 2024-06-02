@@ -9,7 +9,7 @@ public class FuncTest {
     // перед каждым тестом получаем числа из файла
     @BeforeAll
     public static void setUp() throws IOException {
-        numbers = Functions.readNumbersFromFile("numbers.txt");
+        numbers = Functions.readNumbersFromFile("src/main/resources/numbers.txt");
     }
 
     @Test
