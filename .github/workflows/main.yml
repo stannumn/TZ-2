@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: CI
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run tests
-      run: mvn test
+      run: mvn -Dtest=FuncTest test
